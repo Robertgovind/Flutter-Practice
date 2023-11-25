@@ -12,7 +12,7 @@ class _HomeState extends State<Home> {
 
   TextEditingController n2 = TextEditingController();
 
-  var number1 = '0', number2 = '0', output = '1234';
+  var number1 = '0', number2 = '0', output = '';
   void calculate(String operator) {
     var firstNumber = int.parse(number1);
     var secondNumber = int.parse(number2);
