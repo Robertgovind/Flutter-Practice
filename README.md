@@ -12,3 +12,7 @@ I have created this repository to add all those projects that i have created whi
 
     - Using basic widgets and perform simple calculations using different methods.
     - Using textEditingController in the textForm field.
+
+# 3.Chat App
+
+
