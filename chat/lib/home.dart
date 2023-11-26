@@ -1,15 +1,27 @@
-import 'package:chat/widgets/sendingContainer.dart';
+import 'package:chat/widgets/massages.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key});
+  Home({super.key});
 
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-  TextEditingController message = TextEditingController();
+  TextEditingController massageController = TextEditingController();
+
+  List<Messages> massages = [];
+  String text = '';
+
+  void onSend() {
+    Messages msg = Messages(
+      message: text,
+    );
+    massages.insert(0, msg);
+    print(text);
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +38,54 @@ class _HomeState extends State<Home> {
         padding: const EdgeInsets.symmetric(horizontal: 12),
         child: Column(
           children: [
-            SendingContainer(message: message)
+            Expanded(
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return massages[index];
+                },
+                itemCount: massages.length,
+                reverse: true,
+              ),
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Enter message',
+                      labelStyle:
+                          const TextStyle(fontSize: 18, color: Colors.white),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(22.0),
+                      ),
+                      suffixIcon: Icon(Icons.camera_alt_rounded),
+                      suffixIconColor: Colors.white,
+                    ),
+                    controller: massageController,
+                    onChanged: (value) {
+                      text = value;
+                    },
+                  ),
+                ),
+                const SizedBox(
+                  width: 8,
+                ),
+                IconButton(
+                  onPressed: () {
+                    massageController.clear();
+                    onSend();
+                  },
+                  icon: const Icon(
+                    Icons.send,
+                    size: 35,
+                    color: Colors.blue,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
     );
   }
 }
-
