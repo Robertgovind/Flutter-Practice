@@ -15,4 +15,5 @@ I have created this repository to add all those projects that i have created whi
 
 # 3.Chat App
 
-
+- using basic widgets like Text, Row, Column, Flexible, TextField, Listview.builder, and so on,
+- using textEditingController in the textField.
