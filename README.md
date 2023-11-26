@@ -17,3 +17,8 @@ I have created this repository to add all those projects that i have created whi
 
 - using basic widgets like Text, Row, Column, Flexible, TextField, Listview.builder, and so on,
 - using textEditingController in the textField.
+
+# 4.JsonData
+
+- Working with json data created with own which is list of BEI Students 2078 on local device and using through asset,
+- Widgets used are FutureBuilder, ListView.builder, JsonDecoder, and so on.
