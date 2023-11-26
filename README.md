@@ -6,7 +6,7 @@ I have created this repository to add all those projects that i have created whi
 
 # 1.Animated Login Page
 
--Animation,TextFields,Stack, and so on are the basic widgets used in this project.
+- Animation,TextFields,Stack, and so on are the basic widgets used in this project.
 
 # 2.Simple Calculator
 
