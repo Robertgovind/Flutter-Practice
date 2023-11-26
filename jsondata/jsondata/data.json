@@ -1,0 +1,297 @@
+[
+    {
+        "name":"Aagaman KC",
+        "age":20,
+        "rollno":"PAS078BEI01",
+        "address":"Baglung",
+        "sex":"male"
+    },{
+        "name":"Ajay Pant",
+        "age":21,
+        "rollno":"PAS078BEI02",
+        "address":"Chitwan",
+        "sex":"male"
+    },{
+        "name":"Amrit Kumar Banjade",
+        "age":20,
+        "rollno":"PAS078BEI03",
+        "address":"Arghakhanchi",
+        "sex":"male"
+    },{
+        "name":"Anil Poudel",
+        "age":22,
+        "rollno":"PAS078BEI04",
+        "address":"Kaski",
+        "sex":"male"
+    },{
+        "name":"Anisha Bhandari",
+        "age":20,
+        "rollno":"PAS078BEI05",
+        "address":"Nawalparasi",
+        "sex":"female"
+    },{
+        "name":"Anirag Acahrya",
+        "age":21,
+        "rollno":"PAS078BEI06",
+        "address":"Sindhuli",
+        "sex":"male"
+    },{
+        "name":"Arun Chandra Bhushal",
+        "age":22,
+        "rollno":"PAS078BEI07",
+        "address":"Rupandehi",
+        "sex":"male"
+    },{
+        "name":"Bhupendra Singh",
+        "age":20,
+        "rollno":"PAS078BEI08",
+        "address":"Daileh",
+        "sex":"male"
+    },{
+        "name":"Binaya Nepali",
+        "age":22,
+        "rollno":"PAS078BEI09",
+        "address":"Kaski",
+        "sex":"male"
+    },{
+        "name":"Chandra Kamal Singh",
+        "age":22,
+        "rollno":"PAS078BEI10",
+        "address":"Dhanusha",
+        "sex":"male"
+    },{
+        "name":"David Bhatrai",
+        "age":20,
+        "rollno":"PAS078BEI11",
+        "address":"Ilam",
+        "sex":"male"
+    },{
+        "name":"Dhiraj Kumar Chaurasiya",
+        "age":21,
+        "rollno":"PAS078BEI12",
+        "address":"Parsa",
+        "sex":"male"
+    },{
+        "name":"Ganesh Rokaya",
+        "age":22,
+        "rollno":"PAS078BEI13",
+        "address":"Daileh",
+        "sex":"male"
+    },{
+        "name":"Gaurav Bhujel",
+        "age":20,
+        "rollno":"PAS078BEI14",
+        "address":"Kaski",
+        "sex":"male"
+    },{
+        "name":"Govind Kumar Yadav",
+        "age":22,
+        "rollno":"PAS078BEI15",
+        "address":"Siraha",
+        "sex":"male"
+    },{
+        "name":"Kalpana Acharya",
+        "age":20,
+        "rollno":"PAS078BEI16",
+        "address":"Kaski",
+        "sex":"female"
+    },{
+        "name":"Kiran Poudel",
+        "age":21,
+        "rollno":"PAS078BEI17",
+        "address":"Baglung",
+        "sex":"male"
+    },{
+        "name":"Laxmi Prasad Upadhya",
+        "age":22,
+        "rollno":"PAS078BEI18",
+        "address":"Surkhet",
+        "sex":"male"
+    },{
+        "name":"Manila Timilsina",
+        "age":20,
+        "rollno":"PAS078BEI19",
+        "address":"Kaski",
+        "sex":"female"
+    },{
+        "name":"Manish Acharya",
+        "age":22,
+        "rollno":"PAS078BEI20",
+        "address":"Nawalparasi",
+        "sex":"male"
+    },{
+        "name":"Manjil Thapa",
+        "age":21,
+        "rollno":"PAS078BEI21",
+        "address":"Kaski",
+        "sex":"male"
+    },{
+        "name":"Mijash Bhugai",
+        "age":22,
+        "rollno":"PAS078BEI22",
+        "address":"Kaski",
+        "sex":"male"
+    },{
+        "name":"Mukesh Amaresh Thakur",
+        "age":21,
+        "rollno":"PAS078BEI23",
+        "address":"Mahottari",
+        "sex":"male"
+    },{
+        "name":"Nabin Shrestha",
+        "age":22,
+        "rollno":"PAS078BEI24",
+        "address":"Gorkha",
+        "sex":"male"
+    },{
+        "name":"Prabin Thapa",
+        "age":21,
+        "rollno":"PAS078BEI25",
+        "address":"Palpa",
+        "sex":"male"
+    },{
+        "name":"Prashanta Upadhya",
+        "age":20,
+        "rollno":"PAS078BEI26",
+        "address":"Achham",
+        "sex":"male"
+    },{
+        "name":"Rohit Kumar Sah",
+        "age":22,
+        "rollno":"PAS078BEI27",
+        "address":"Dhanusha",
+        "sex":"male"
+    },{
+        "name":"Rojin Puri",
+        "age":20,
+        "rollno":"PAS078BEI28",
+        "address":"Kaski",
+        "sex":"male"
+    },{
+        "name":"Roshan Thapa",
+        "age":21,
+        "rollno":"PAS078BEI29",
+        "address":"Syangja",
+        "sex":"male"
+    },
+    {
+        "name":"Rujan Subedi",
+        "age":22,
+        "rollno":"PAS078BEI30",
+        "address":"Sindhuli",
+        "sex":"male"
+    },
+    {
+        "name":"Saange Tamang",
+        "age":21,
+        "rollno":"PAS078BEI31",
+        "address":"Ramechhap",
+        "sex":"male"
+    },{
+        "name":"Sagar Joshi",
+        "age":22,
+        "rollno":"PAS078BEI32",
+        "address":"Kailali",
+        "sex":"male"
+    },
+    {
+        "name":"Sagar Poudel",
+        "age":20,
+        "rollno":"PAS078BEI33",
+        "address":"Baglung",
+        "sex":"male"
+    },{
+
+        "name":"Sanjog Sapkota",
+        "age":21,
+        "rollno":"PAS078BEI34",
+        "address":"Tahahu",
+        "sex":"male"
+    },{
+        "name":"Santosh Kumar Barai",
+        "age":21,
+        "rollno":"PAS078BEI35",
+        "address":"Rupandehi",
+        "sex":"male"
+    },{
+        "name":"Satish Gautam",
+        "age":22,
+        "rollno":"PAS078BEI36",
+        "address":"Dang",
+        "sex":"male"
+    },{
+        "name":"Sharon Adhikari",
+        "age":19,
+        "rollno":"PAS078BEI37",
+        "address":"Chitwan",
+        "sex":"female"
+    },{
+        "name":"Siddartha Gupta",
+        "age":22,
+        "rollno":"PAS078BEI38",
+        "address":"Rautahat",
+        "sex":"male"
+    },{
+        "name":"Subina Chhetri",
+        "age":20,
+        "rollno":"PAS078BEI39",
+        "address":"Parbat",
+        "sex":"female"
+    },{
+        "name":"Suchana Subedi",
+        "age":21,
+        "rollno":"PAS078BEI40",
+        "address":"Syangja",
+        "sex":"female"
+    },{
+        "name":"Sulav Kandel",
+        "age":22,
+        "rollno":"PAS078BEI41",
+        "address":"Kathmandu",
+        "sex":"male"
+    },{
+        "name":"Sumit Sigdel",
+        "age":22,
+        "rollno":"PAS078BEI42",
+        "address":"Nawalparasi",
+        "sex":"male"
+    },{
+        "name":"Swostika Poudel",
+        "age":22,
+        "rollno":"PAS078BEI43",
+        "address":"Kaski",
+        "sex":"female"
+    },{
+        "name":"Uma Nath Thakur",
+        "age":22,
+        "rollno":"PAS078BEI44",
+        "address":"Dhanusha",
+        "sex":"male"
+    },{
+        "name":"Unmesh Subedi",
+        "age":21,
+        "rollno":"PAS078BEI45",
+        "address":"Chitwan",
+        "sex":"male"
+    },{
+        "name":"Upendra Raj Joshi",
+        "age":22,
+        "rollno":"PAS078BEI46",
+        "address":"Kanchanpur",
+        "sex":"male"
+    },{
+        "name":"Utkarsha Gupta",
+        "age":22,
+        "rollno":"PAS078BEI47",
+        "address":"Kapilvastu",
+        "sex":"male"
+    },{
+        "name":"Sriyanka Baral",
+        "age":20,
+        "rollno":"PAS078BEI48",
+        "address":"Chitwan",
+        "sex":"male"
+    }
+    
+    
+]
