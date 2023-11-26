@@ -14,27 +14,29 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:const Text('JSON Data'),
+        title: const Text('JSON Data'),
       ),
       body: FutureBuilder(
         future: DefaultAssetBundle.of(context).loadString('jsondata/data.json'),
         builder: (context, AsyncSnapshot snapshot) {
           var data = json.decode(snapshot.data.toString());
           return ListView.builder(
-            itemBuilder: (context, int index) {
+            itemBuilder: (context, index) {
               return Card(
+                margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Text("Name: ${data['name']}"),
-                    Text("Age: ${data['age']}"),
-                    Text("Roll No: ${data['rollno']}"),
-                    Text("Address: ${data['address']}"),
-                    Text("Gender: ${data['sex']}"),
+                    Text("Name: ${data[index]['name']}"),
+                    Text("Age: ${data[index]['age']}"),
+                    Text("Roll No: ${data[index]['rollno']}"),
+                    Text("Address: ${data[index]['address']}"),
+                    Text("Gender: ${data[index]['sex']}"),
                   ],
                 ),
               );
             },
+            itemCount: 48,
           );
         },
       ),
