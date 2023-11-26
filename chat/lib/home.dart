@@ -1,3 +1,4 @@
+import 'package:chat/widgets/sendingContainer.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -25,38 +26,11 @@ class _HomeState extends State<Home> {
         padding: const EdgeInsets.symmetric(horizontal: 12),
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: TextField(
-                    decoration: InputDecoration(
-                      labelText: 'Enter message',
-                      labelStyle:
-                          const TextStyle(fontSize: 18, color: Colors.white),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
-                    controller: message,
-                  ),
-                ),
-                const SizedBox(
-                  width: 8,
-                ),
-                IconButton(
-                  onPressed: () {
-                    message.clear();
-                  },
-                  icon: const Icon(
-                    Icons.send,
-                    size: 35,
-                  ),
-                ),
-              ],
-            )
+            SendingContainer(message: message)
           ],
         ),
       ),
     );
   }
 }
+
