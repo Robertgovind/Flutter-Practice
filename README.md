@@ -22,3 +22,8 @@ I have created this repository to add all those projects that i have created whi
 
 - Working with json data created with own which is list of BEI Students 2078 on local device and using through asset,
 - Widgets used are FutureBuilder, ListView.builder, JsonDecoder, and so on.
+
+# 5.API based News App
+
+- Here I have used basics widgets for ui part.
+- http package for fetching json data from api and integrated in app.
