@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -13,6 +16,35 @@ class _HomeState extends State<Home> {
   String url =
       'https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
 
+  Map<String, dynamic>? data;
+  String? title;
+  String? id;
+  String? symbol;
+  String? price;
+  String? latsPrice;
+
+  @override
+  void initState() {
+    getCurrency();
+    super.initState();
+  }
+
+  void getCurrency() async {
+    final response = await http.get(Uri.parse(url), headers: {
+      'X-CMC_PRO_API_KEY': apiKey,
+      'Accept': 'application/json',
+    });
+    // print(response.body);
+    data = json.decode(response.body);
+
+    title = data?['data'][0]['name'];
+    id = data?['data'][0]['id'];
+    symbol = data?['data'][0]['symbol'];
+    price = data?['data'][0]['quote']['USD']['price'];
+    latsPrice = data?['data'][0]['quote']['USD']['percent_change_1h'];
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,39 +55,40 @@ class _HomeState extends State<Home> {
       ),
       body: ListView.builder(
         itemBuilder: (BuildContext context, int index) {
-          return const ListTile(
-            tileColor: Colors.blueGrey,
+          return ListTile(
+            tileColor: Colors.white,
             leading: CircleAvatar(
               backgroundColor: Colors.blueAccent,
               radius: 35,
               child: Text(
-                'T',
-                style: TextStyle(fontSize: 24),
+                title?[0] ?? '',
+                style: const TextStyle(fontSize: 24),
               ),
             ),
             title: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Title',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                  title ?? '',
+                  style: const TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.w500),
                 ),
                 Text(
-                  'Subhead',
-                  style: TextStyle(fontSize: 16),
+                  id ?? '',
+                  style: const TextStyle(fontSize: 16),
                 ),
               ],
             ),
-            subtitle: Text('Subtitle'),
+            subtitle: Text(symbol ?? ''),
             trailing: Column(
               children: [
                 Text(
-                  '\$500',
-                  style: TextStyle(fontSize: 16),
+                  price ?? '',
+                  style: const TextStyle(fontSize: 16),
                 ),
                 Text(
-                  '+6.0%',
-                  style: TextStyle(
+                  latsPrice ?? '',
+                  style: const TextStyle(
                       color: Color.fromARGB(255, 8, 215, 14),
                       fontSize: 16,
                       fontWeight: FontWeight.w400),
@@ -64,7 +97,7 @@ class _HomeState extends State<Home> {
             ),
           );
         },
-        itemCount: 3,
+        itemCount: data?.length,
       ),
     );
   }
