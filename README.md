@@ -26,4 +26,4 @@ I have created this repository to add all those projects that i have created whi
 # 5.API based News App
 
 - Here I have used basics widgets for ui part.
-- http package for fetching json data from api and integrated in app.
+- http package for fetching json data from api and integrated in app by decoding it through json decode.
