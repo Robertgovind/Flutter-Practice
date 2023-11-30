@@ -27,3 +27,12 @@ I have created this repository to add all those projects that i have created whi
 
 - Here I have used basics widgets for ui part.
 - http package for fetching json data from api and integrated in app by decoding it through json decode.
+
+# 6.Navigation and Drawer
+
+- In this project i have learned basically navigation and drawer.
+- Basic widgets used are Drawer, ListView, UserAccountDrawerHeader-it has better features to enhance ui, and so on.
+
+# 7.Material Design
+
+- In this project i have worked and learned about AlertDialog, SnackBar,
