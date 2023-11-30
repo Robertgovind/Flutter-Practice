@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_design/stepper.dart';
+import 'package:material_design/tabbar.dart';
 
 class Body extends StatefulWidget {
   const Body({
@@ -60,13 +61,22 @@ class _BodyState extends State<Body> {
             child: const Text('MaterialBanner'),
           ),
           ElevatedButton(
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (BuildContext context) {
+                return Steppers();
+              }));
+            },
+            child: const Text('Stepper'),
+          ),
+          ElevatedButton(
               onPressed: () {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (BuildContext context) {
-                  return Steppers();
+                  return TabBarNavigation();
                 }));
               },
-              child: const Text('Stepper'))
+              child: const Text('Navigation bar')),
         ],
       ),
     );
