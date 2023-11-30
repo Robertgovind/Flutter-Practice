@@ -35,4 +35,4 @@ I have created this repository to add all those projects that i have created whi
 
 # 7.Material Design
 
-- In this project i have worked and learned about AlertDialog, SnackBar,
+- In this project i have worked and learned about AlertDialog, SnackBar, MaterialBanner, Stepper, TabBar, TabBarView,
