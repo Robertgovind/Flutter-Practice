@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design/stepper.dart';
 
 class Body extends StatefulWidget {
   const Body({
@@ -44,6 +45,28 @@ class _BodyState extends State<Body> {
             },
             child: const Text('Show AlertDialogue'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              ScaffoldMessenger.of(context).showMaterialBanner(
+                const MaterialBanner(
+                  content: Text('This is material banner'),
+                  actions: [
+                    Text('ok'),
+                    Text('cancel'),
+                  ],
+                ),
+              );
+            },
+            child: const Text('MaterialBanner'),
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (BuildContext context) {
+                  return Steppers();
+                }));
+              },
+              child: const Text('Stepper'))
         ],
       ),
     );
