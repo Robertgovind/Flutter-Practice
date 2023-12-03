@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 
-class  AppState {
+class AppState {
   final count;
-  AppState(this.count)  ;
-
+  AppState(this.count);
 }
 
-enum Actions{Increment}
-
+enum Actions { Increment }
 
 AppState counter(AppState previous, dynamic action) {
   if (action == Actions.Increment) {
@@ -18,32 +16,29 @@ AppState counter(AppState previous, dynamic action) {
   return previous.count;
 }
 
-
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
- 
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-          primaryColor: Colors.blue,
-        ),
-        home:  MyHomePage(),
-      );
-    
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        primaryColor: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-   MyHomePage({super.key});
-   final store = Store<AppState>(counter, initialState: AppState(0));
+  MyHomePage({super.key});
+  final store = Store<AppState>(counter, initialState: AppState(0));
 
   @override
   Widget build(BuildContext context) {
@@ -61,22 +56,29 @@ class MyHomePage extends StatelessWidget {
               const Text(
                 'You have pushed the button this many times:',
               ),
-              StoreConnector(
+              StoreConnector<int, dynamic>(
                 converter: store.state.count,
-                builder: (BuildContext context,count){return  Text(
-                '$count',
-                  style: Theme.of(context).textTheme.headlineMedium,
-                );},
-                
-                
+                builder: (BuildContext context, count) {
+                  return Text(
+                    '${count ?? ''}',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  );
+                },
               ),
             ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          tooltip: 'Increment',
-          child: const Icon(Icons.add),
+        floatingActionButton: StoreConnector<int, dynamic>(
+          converter: (store) {
+            return () => store.dispatch(Actions.Increment);
+          },
+          builder: (context, callback) {
+            return FloatingActionButton(
+              onPressed: callback,
+              tooltip: 'Increment',
+              child: const Icon(Icons.add),
+            );
+          },
         ),
       ),
     );
